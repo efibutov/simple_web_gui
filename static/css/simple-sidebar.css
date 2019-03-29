@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+#navbar {
+    background-color: #000;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 30px;
+    color: #4CAF50;
+    /*position: sticky;*/
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    min-width: 230px;
+}
+
+
+#separator {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: #73ce1e;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+#app {
+    position: relative;
+    margin-left: 200px;
+}
+
+/*#navbar-settings {*/
+    /*background-color: #000;*/
+    /*margin: 0;*/
+    /*padding-left: 10px;*/
+    /*padding-top: 30px;*/
+    /*color: #4CAF50;*/
+    /*position: sticky;*/
+    /*height: 100%;*/
+    /*overflow: auto;*/
+/*}*/

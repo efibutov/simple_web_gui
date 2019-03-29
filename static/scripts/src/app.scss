@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import '../node_modules/bulma';
+@import '../node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css';
+@import '../node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css';
+@import '../node_modules/bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.min.css';
+@import '../node_modules/bulma-extensions/bulma-switch/dist/css/bulma-switch.min.css';
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$box-color: $beige-lighter;
+$box-background-color: #882288;
+
+// Update Bulma's global variables
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+//$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+.sequence-runner {
+  width: 30%;
+}
+
+.new-sequence-table {
+  width: 30%;
+}
+
+.main-section {
+  //background-color: #00d1b2;
+}
+
+.delete-column {
+  width: 2%;
+}
+
+.header {
+  grid-column: 1 / -1;
+  position: -webkit-sticky;
+  position: sticky;
+  //margin: 0;
+  padding: 10px;
+  top: 0;
+  background-color: #00b89c;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer {
+  padding: 55px;
+  //grid-column: 1 / -1;
+  position: -webkit-sticky;
+  position: sticky;
+  margin-left: 0;
+  bottom: 0;
+  background-color: cornflowerblue;
+  width: 100%;
+}
+
+.datamapper {
+  height: 400px;
+  flex-direction: row;
+  overflow-y: auto;
+}
+
+
+/*
+//Update some of Bulma's component variables
+//$body-background-color: $beige-lighter;
+//$control-border-width: 20px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+
+// Import only what you need from Bulma
+//@import "../node_modules/bulma/sass/utilities/_all.sass";
+//@import "../node_modules/bulma/sass/base/_all.sass";
+//@import "../node_modules/bulma/sass/elements/button.sass";
+//@import "../node_modules/bulma/sass/elements/container.sass";
+//@import "../node_modules/bulma/sass/elements/form.sass";
+//@import "../node_modules/bulma/sass/elements/title.sass";
+//@import "../node_modules/bulma/sass/components/navbar.sass";
+//@import "../node_modules/bulma/sass/layout/hero.sass";
+//@import "../node_modules/bulma/sass/layout/section.sass";
+
+//@charset "utf-8";
+//@import '../node_modules/bulma';
+//@import '../node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css';
+//@import '../node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css';
+//@import '../node_modules/bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.min.css';
+////// Import only what you need from Bulma
+////@import "../node_modules/bulma/sass/utilities/_all.sass";
+////@import "../node_modules/bulma/sass/base/_all.sass";
+////@import "../node_modules/bulma/sass/elements/button.sass";
+////@import "../node_modules/bulma/sass/elements/container.sass";
+////@import "../node_modules/bulma/sass/elements/form.sass";
+////@import "../node_modules/bulma/sass/elements/title.sass";
+////@import "../node_modules/bulma/sass/components/navbar.sass";
+////@import "../node_modules/bulma/sass/layout/hero.sass";
+////@import "../node_modules/bulma/sass/layout/section.sass";
+//
+//
+//// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+//
+//// Set your brand colors
+//$purple: #8A4D76;
+//$pink: #FA7C91;
+//$brown: #757763;
+//$beige-light: #D0D1CD;
+//$beige-lighter: #EFF0EB;
+//$box-color: #EFF0EB;
+//$box-background-color: #999999;
+//
+//// Update Bulma's global variables
+//$family-sans-serif: "Nunito", sans-serif;
+//$grey-dark: $brown;
+//$grey-light: $beige-light;
+//$primary: $purple;
+//$link: $pink;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+//
+//// Update some of Bulma's component variables
+//$body-background-color: $beige-lighter;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+
+//$port-dash-board-width: 200px;
+
+//.container > div {
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    font-size: 2em;
+//    color: #ffeead;
+//}
+
+//.container > div:nth-child(1n) {
+//  background-color: #96ceb4;
+//}
+//
+//.container > div:nth-child(3n) {
+//  background-color: #88d8b0;
+//}
+//
+//.container > div:nth-child(2n) {
+//  background-color: #ff6f69;
+//}
+//
+//.container > div:nth-child(4n) {
+//  background-color: #777;
+//}
+
+//html, body {
+//  background-color: lightslategrey;
+//  margin: 1%;
+//}
+
+//.container {
+//  height: 100%;
+//  display: grid;
+//  grid-gap: 3px;
+//  grid-template-columns: repeat(12, 1fr);
+//  grid-template-rows: 1000px 1000px 1000px auto;
+//}
+
+//.menu {
+//  grid-column: 6 / 12;
+//}
+//
+//.content {
+//  grid-column: 5 / 8;
+//}
+//
+//.dashboard {
+//  width: 33%;
+//  height: 40%;
+//}
+
+//.all-dashboards {
+//  max-height: 80%;
+//  padding-left: 1%;
+//  flex-direction: column;
+//  background-color: indianred;
+//}
+//
+//.custom-command {
+//  width: 30%;
+//}
+//
+//.sequence-table {
+//  background-color: lightcoral;
+//}
+//
+//.table.is-scrollable {
+//  tbody {
+//    overflow-y: scroll;
+//      width: auto;
+//      position: absolute;
+//  }
+//}
+*/

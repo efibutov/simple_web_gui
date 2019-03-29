@@ -1,0 +1,27 @@
+# User-specific stuff
+.idea/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+tests/.pytest_cache/
+
+# Distribution / packaging
+lib/
+lib64/
+
+# LOGS
+.log.txt.*
+.log.txt
+# Ignore objects and archives, anywhere in the tree.
+*.[oa]
+*.lo
+*.la
+*.ko
+
+
+
+# Other build output
+
+# Ignore backup files
+*~
